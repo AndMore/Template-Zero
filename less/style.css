@@ -1,0 +1,175 @@
+.grid_1 {
+  width: 80px;
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.grid_2 {
+  width: 170px;
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.grid_3 {
+  width: 260px;
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.grid_4 {
+  width: 350px;
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.grid_5 {
+  width: 440px;
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.grid_6 {
+  width: 530px;
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.grid_7 {
+  width: 620px;
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.grid_8 {
+  width: 710px;
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.grid_9 {
+  width: 800px;
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.grid_10 {
+  width: 890px;
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.grid_11 {
+  width: 980px;
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.grid_12 {
+  width: 1070px;
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.colonna {
+  margin: 0 5px;
+  overflow: hidden;
+  float: left;
+  display: inline;
+}
+.riga {
+  width: 1080px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.riga .riga {
+  margin: 0 -5px;
+  width: auto;
+  display: inline-block;
+}
+/* Grid Span */
+/* Questa classe mi permettera' di impostare gli angoli arrotondati alto, basso, dx e sx */
+/* float clearing for IE6 */
+* html .clr {
+  height: 1%;
+  overflow: visible;
+}
+/* float clearing for IE7 */
+* + html .clr {
+  min-height: 1%;
+}
+/* float clearing for everyone else */
+.clr:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+/* Clearfix funzione */
+.clearfix {
+  display: block;
+  zoom: 1;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* Opacity */
+#container {
+  width: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+header {
+  width: 1080px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#main {
+  width: 710px;
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+#main article {
+  display: block;
+  zoom: 1;
+}
+#main article:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+aside {
+  width: 350px;
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+footer {
+  width: 1080px;
+  margin: 0 auto;
+  overflow: hidden;
+}

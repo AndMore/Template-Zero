@@ -1,0 +1,41 @@
+@import "grid";
+@import "classes";
+#container{
+	.contenitore();
+}
+header{
+	.riga();
+}
+
+#main{
+	.grid_8();
+	
+	article{
+		.clearfix();
+	}
+}
+aside{
+	.grid_4();
+}
+footer{
+	.riga();
+}
+
+/***********************/
+/*** Pagina Singola ***/
+/***********************/
+.single{
+	
+	#main{
+		.grid_9();
+		
+		article{ .clearfix(); }
+		
+	}//Fine #main
+	
+	aside{ .grid_3(); }
+	
+	footer{
+		section{ .grid_6();}
+	}
+}//Fine .single

@@ -1,0 +1,62 @@
+@larghezzaColonna: 80px;
+@margine: 5px;
+
+@totColonne: @larghezzaColonna * 12;
+@totMargine: (@margine * 12) * 2;
+@totLarghezza: @totColonne + @totMargine;
+
+.larghezza (@colonna: 1, @margini: 0) {
+  width: (@larghezzaColonna * @colonna) + (@margine * @margini);
+}
+
+
+.grid_1 { .larghezza(1,0); .colonna-base;}
+.grid_2 { .larghezza(2,2); .colonna-base;}
+.grid_3 { .larghezza(3,4); .colonna-base;}
+.grid_4 { .larghezza(4,6); .colonna-base;}
+.grid_5 { .larghezza(5,8); .colonna-base;}
+.grid_6 { .larghezza(6,10); .colonna-base;}
+.grid_7 { .larghezza(7,12); .colonna-base;}
+.grid_8 { .larghezza(8,14); .colonna-base;}
+.grid_9 { .larghezza(9,16); .colonna-base;}
+.grid_10 { .larghezza(10,18); .colonna-base;}
+.grid_11 { .larghezza(11,20); .colonna-base;}
+.grid_12 { .larghezza(12,22); .colonna-base;}
+
+.colonna {
+	margin: 0 @margine;
+	overflow: hidden;
+	float: left;
+	display: inline;
+}
+.riga {
+	width: @totLarghezza;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.riga .riga {
+	margin: 0 (@margine * -1);
+	width: auto;
+	display: inline-block;
+}
+
+/* Grid Span */
+.span(@n: 1){
+	width: (@larghezzaColonna * @n) + (@margine  * @n);
+}
+.colonna-base(){
+	position: relative;
+	float: left;
+	margin-right: @margine;
+	margin-left: @margine;
+}
+.colonne(@n: 1){
+	.span(@n);
+	.colonna-base();
+}
+.contenitore(){
+	
+	width: @totLarghezza;
+	margin:  0 auto;
+	position: relative;
+}
